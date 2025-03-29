@@ -1,0 +1,112 @@
+/* src/components/reminders/ReminderList.css */
+
+.reminder-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .reminder-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .reminder-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .reminder-card.inactive {
+    opacity: 0.7;
+    background-color: #f9f9f9;
+  }
+  
+  .reminder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .reminder-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .reminder-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .toggle-btn svg {
+    font-size: 1rem;
+  }
+  
+  .reminder-datetime {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .repeat-frequency {
+    color: #3498db;
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+  
+  .reminder-description {
+    color: #34495e;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  .reminder-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  
+  .delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffebee;
+    color: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .delete-btn:hover {
+    background-color: #fce4e4;
+  }
+  
+  .no-reminders {
+    text-align: center;
+    padding: 30px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
